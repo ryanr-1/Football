@@ -10,7 +10,7 @@ class GamesPicksController < ApplicationController
   # GET /games_picks/1
   # GET /games_picks/1.json
   def show
-  end
+   end 
 
   # GET /games_picks/new
   def new

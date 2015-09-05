@@ -13,7 +13,11 @@ Rails.application.routes.draw do
 
   get 'picks' => 'home#picks'
 
+  get 'games_picks' => 'picks#index'
+
   get 'owner_total' => 'home#results'
+
+  get 'new_pick_path' => 'picks#new'
 
   get "/auth/:provider/callback" => "sessions#create"
   get "/signout" => "sessions#destroy", :as => :signout

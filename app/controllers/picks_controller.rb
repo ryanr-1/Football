@@ -10,6 +10,7 @@ class PicksController < ApplicationController
   # GET /picks/1
   # GET /picks/1.json
   def show
+    
   end
 
   # GET /picks/new

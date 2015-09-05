@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  games: MyString
+  team_names: MyString
+  weeks: 1
+
+two:
+  games: MyString
+  team_names: MyString
+  weeks: 1

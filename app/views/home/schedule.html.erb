@@ -1,0 +1,31 @@
+
+
+
+
+	
+<div>
+<%=  @games.each do |games| %>	
+
+
+	
+<p>Week <%= games["gameWeek"] %></p>
+<p><%= games["gameDate"] %></p>
+<p><%= games["homeTeam"] %> vs. <%= games["awayTeam"] %></p>
+<p>Airing on <%= games["tvStation"] %></p>
+	
+     
+
+</div>
+
+<% end %>
+
+
+  
+
+
+
+  
+
+
+
+	

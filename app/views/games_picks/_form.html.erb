@@ -1,0 +1,29 @@
+<%= form_for(@games_pick) do |f| %>
+  <% if @games_pick.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@games_pick.errors.count, "error") %> prohibited this games_pick from being saved:</h2>
+
+      <ul>
+      <% @games_pick.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :games %><br>
+    <%= f.text_field :games %>
+  </div>
+  <div class="field">
+    <%= f.label :team_names %><br>
+    <%= f.text_field :team_names %>
+  </div>
+  <div class="field">
+    <%= f.label :weeks %><br>
+    <%= f.number_field :weeks %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

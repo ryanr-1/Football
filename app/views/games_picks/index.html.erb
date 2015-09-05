@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Games Picks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Games</th>
+      <th>Team names</th>
+      <th>Weeks</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @games_picks.each do |games_pick| %>
+      <tr>
+        <td><%= games_pick.games %></td>
+        <td><%= games_pick.team_names %></td>
+        <td><%= games_pick.weeks %></td>
+        <td><%= link_to 'Show', games_pick %></td>
+        <td><%= link_to 'Edit', edit_games_pick_path(games_pick) %></td>
+        <td><%= link_to 'Destroy', games_pick, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Games pick', new_games_pick_path %>
